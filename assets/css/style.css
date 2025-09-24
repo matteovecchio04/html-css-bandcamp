@@ -31,6 +31,24 @@
 
         .main-left {
             background-color: #ff5c5c;
+
+            .col {
+                background-color: aqua;
+                height: 150px;
+                margin-bottom: 2rem;
+
+                .card {
+                    .card-top {
+                        height: 50px;
+                        background-color: lightgray;
+                    }
+
+                    .card-bottom {
+                        height: 100px;
+                        background-color: lightslategray;
+                    }
+                }
+            }
         }
 
         .aside-right {
@@ -42,6 +60,7 @@
 
 .wrapper {
     height: 100vh;
+    overflow: hidden;
 }
 
 header {
@@ -71,9 +90,29 @@ header {
     .main-left {
         width: 65%;
         height: 100%;
+        overflow-y: auto;
+
+        .col {
+            width: 100%;
+            display: flex;
+
+            .card {
+                width: calc(100% / 4);
+
+                .card-top {
+                    width: 100%;
+                }
+
+                .card-bottom {
+                    width: 100%;
+                }
+            }
+        }
+
     }
 
     .aside-right {
+        overflow-y: auto;
         width: 35%;
         height: 100%;
     }
