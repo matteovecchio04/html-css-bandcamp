@@ -168,6 +168,11 @@ header {
 
             .card-bottom {
                 width: 100%;
+                color: white;
+
+                .genere{
+                    color: var(--bc-search);
+                }
             }
         }
 
