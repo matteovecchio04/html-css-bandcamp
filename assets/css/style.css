@@ -75,6 +75,7 @@
 .wrapper {
     height: 100vh;
     overflow: hidden;
+    background-color: var(--bc-primary);
 }
 
 header {
@@ -101,6 +102,10 @@ header {
                 text-decoration: none;
                 color: white;
                 margin-right: 1rem;
+
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
 
@@ -147,13 +152,18 @@ header {
         overflow-y: auto;
         display: flex;
         flex-wrap: wrap;
+        gap: 1rem;
 
         .card {
-            width: calc(100% / 4);
+            width: calc(100% / 4 - 1rem);
             padding: 0.5rem;
 
             .card-top {
                 width: 100%;
+                
+                .img{
+                    max-width: 100%;
+                }
             }
 
             .card-bottom {
