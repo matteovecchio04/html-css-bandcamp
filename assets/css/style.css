@@ -32,27 +32,34 @@
         .main-left {
             background-color: #ff5c5c;
 
-            .col {
-                background-color: aqua;
-                height: 150px;
-                margin-bottom: 2rem;
+            .card {
+                .card-top {
+                    height: 100px;
+                    background-color: lightgray;
+                }
 
-                .card {
-                    .card-top {
-                        height: 50px;
-                        background-color: lightgray;
-                    }
-
-                    .card-bottom {
-                        height: 100px;
-                        background-color: lightslategray;
-                    }
+                .card-bottom {
+                    height: 50px;
+                    background-color: lightslategray;
                 }
             }
+
         }
 
         .aside-right {
             background-color: #ff5c5c;
+
+            .card-big {
+                .card-top {
+                    height: 300px;
+                    background-color: lightgray;
+                }
+
+                .card-bottom {
+                    height: 150px;
+                    background-color: lightslategray;
+                }
+            }
         }
 
     }
@@ -91,21 +98,19 @@ header {
         width: 65%;
         height: 100%;
         overflow-y: auto;
+        display: flex;
+        flex-wrap: wrap;
 
-        .col {
-            width: 100%;
-            display: flex;
+        .card {
+            width: calc(100% / 4);
+            padding: 0.5rem;
 
-            .card {
-                width: calc(100% / 4);
+            .card-top {
+                width: 100%;
+            }
 
-                .card-top {
-                    width: 100%;
-                }
-
-                .card-bottom {
-                    width: 100%;
-                }
+            .card-bottom {
+                width: 100%;
             }
         }
 
@@ -115,5 +120,18 @@ header {
         overflow-y: auto;
         width: 35%;
         height: 100%;
+
+        .card-big {
+            width: 100%;
+            padding: 0.5rem;
+
+            .card-top {
+                width: 100%;
+            }
+
+            .card-bottom {
+                width: 100%;
+            }
+        }
     }
 }
