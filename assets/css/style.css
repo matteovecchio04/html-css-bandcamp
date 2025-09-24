@@ -153,6 +153,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
+        padding-top: 1rem;
 
         .card {
             width: calc(100% / 4 - 1rem);
@@ -182,6 +183,8 @@ header {
         overflow-y: auto;
         width: 35%;
         height: 100%;
+        text-align: center;
+        padding-top: 1rem;
 
         .card-big {
             width: 100%;
@@ -189,6 +192,10 @@ header {
 
             .card-top {
                 width: 100%;
+
+                .img{
+                    max-width: 100%;
+                }
             }
 
             .card-bottom {
