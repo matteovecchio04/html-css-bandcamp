@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
+
 
 .debug {
 
@@ -72,6 +74,27 @@
     --bc-search: #464646;
 }
 
+/* utilities */
+.inline {
+    display: inline;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+
+
+
+
 .wrapper {
     height: 100vh;
     overflow: hidden;
@@ -88,22 +111,22 @@ header {
         height: 55px;
         display: flex;
         justify-content: space-between;
-        
-        .header-top-left{
+
+        .header-top-left {
             display: flex;
             align-items: center;
         }
 
-        .header-top-right{
+        .header-top-right {
             display: flex;
             align-items: center;
 
-            a{
+            a {
                 text-decoration: none;
                 color: white;
                 margin-right: 1rem;
 
-                &:hover{
+                &:hover {
                     text-decoration: underline;
                 }
             }
@@ -154,6 +177,8 @@ header {
         flex-wrap: wrap;
         gap: 1rem;
         padding-top: 1rem;
+        scrollbar-width: thin;
+        scrollbar-color: var(--bc-search) var(--bc-primary);
 
         .card {
             width: calc(100% / 4 - 1rem);
@@ -161,8 +186,8 @@ header {
 
             .card-top {
                 width: 100%;
-                
-                .img{
+
+                .img {
                     max-width: 100%;
                 }
             }
@@ -171,7 +196,7 @@ header {
                 width: 100%;
                 color: white;
 
-                .genere{
+                .genere {
                     color: var(--bc-search);
                 }
             }
@@ -185,6 +210,8 @@ header {
         height: 100%;
         text-align: center;
         padding-top: 1rem;
+        scrollbar-width: thin;
+        scrollbar-color: var(--bc-search) var(--bc-primary);
 
         .card-big {
             width: 100%;
@@ -192,14 +219,55 @@ header {
 
             .card-top {
                 width: 100%;
+                margin-bottom: 1rem;
 
-                .img{
+                .img {
                     max-width: 100%;
                 }
             }
 
             .card-bottom {
                 width: 100%;
+                text-align: left;
+                gap: 1rem;
+                color: white;
+                margin-bottom: 1rem;
+
+                .play {
+                    width: 4.3rem;
+                    padding: 1rem;
+                    font-size: 2rem;
+                    background-color: white;
+                    color: var(--bc-primary);
+                    border-radius: 5rem;
+                }
+            }
+
+            .artist.menu {
+                width: 100%;
+                text-align: center;
+            }
+
+            .btn-light {
+                width: 100%;
+                padding: 0.5rem;
+                border-radius: 10px;
+                margin: auto;
+                background-color: white;
+                color: var(--bc-primary);
+                border: 1px solid white;
+                margin-bottom: 5px;
+            }
+
+            .btn-dark {
+                width: 100%;
+                padding: 0.5rem;
+                border-radius: 10px;
+                margin: auto;
+                background-color: var(--bc-primary);
+                color: white;
+                border: 1px solid white;
+                margin-bottom: 1rem;
             }
         }
     }
