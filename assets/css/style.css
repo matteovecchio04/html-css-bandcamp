@@ -36,6 +36,8 @@
             background-color: #ff5c5c;
 
             .card {
+
+
                 .card-top {
                     height: 100px;
                     background-color: lightgray;
@@ -45,7 +47,10 @@
                     height: 50px;
                     background-color: lightslategray;
                 }
+
+
             }
+
 
         }
 
@@ -114,11 +119,11 @@ header {
             display: flex;
             align-items: center;
 
-            .logo{
+            .logo {
                 max-width: 100%;
             }
 
-            .mobile{
+            .mobile {
                 display: none;
             }
         }
@@ -130,14 +135,16 @@ header {
             a {
                 text-decoration: none;
                 color: white;
-                margin-right: 1rem;
+                padding: 0 1rem;
+                line-height: 55px;
 
                 &:hover {
+                    background-color: var(--bc-secondary);
                     text-decoration: underline;
                 }
             }
 
-            .icon{
+            .icon {
                 color: white;
                 padding-right: 2rem;
                 display: none;
@@ -167,12 +174,13 @@ header {
     .header-bottom {
         height: 55px;
         background-color: var(--bc-secondary);
-        padding-left: 45px;
+        padding-left: 65px;
+
 
         .search-big {
             background-color: var(--bc-search);
             border-width: 0;
-            margin: 0.5rem;
+            margin: 0.5rem 0;
             border-radius: 3rem;
             width: 460px;
             color: #949494;
@@ -216,6 +224,27 @@ header {
 
             .card-top {
                 width: 100%;
+                position: relative;
+
+                &:hover {
+                    .play-icon {
+                    display: block;
+                }
+                }
+
+                .play-icon {
+                    display: none;
+                    position: absolute;
+                    top: 85%;
+                    left: 3%;
+                    color: gray;
+
+                    &:hover{
+                        opacity: 60%;
+                    }
+                }
+
+
 
                 .img {
                     max-width: 100%;
@@ -246,6 +275,7 @@ header {
 
         .card-big {
             width: 100%;
+            padding-right: 0.5rem;
 
             .card-top {
                 width: 100%;
@@ -310,19 +340,19 @@ header {
 }
 
 @media screen and (max-width: 744px) {
-    header .header-top .search{
+    header .header-top .search {
         width: 250px;
 
-        input{
+        input {
             width: 75%;
         }
     }
 
-    header .header-bottom{
+    header .header-bottom {
         padding-left: 30px;
     }
 
-    header .header-bottom .search-big{
+    header .header-bottom .search-big {
         width: 375px;
     }
 
@@ -341,39 +371,39 @@ header {
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
 
 
-    header .header-top .search{
+    header .header-top .search {
         display: none;
     }
 
     header .header-top .header-top-left {
-        .logo{
+        .logo {
             display: none;
         }
 
-        .mobile{
+        .mobile {
             display: block;
         }
     }
 
-    header .header-top .header-top-right{
-        .icon{
+    header .header-top .header-top-right {
+        .icon {
             display: block;
         }
     }
 
-    header .header-bottom .search-big{
-        width: 100%;
+    header .header-bottom .search-big {
+        width: 93%;
     }
 
-    .bottom .main-left{
+    .bottom .main-left {
         width: 100%;
         padding-right: 0;
     }
 
-    .bottom .aside-right{
+    .bottom .aside-right {
         display: none;
     }
 }
