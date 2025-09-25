@@ -93,8 +93,6 @@
 
 
 
-
-
 .wrapper {
     height: 100vh;
     overflow: hidden;
@@ -141,6 +139,13 @@ header {
             color: #949494;
             height: 70%;
             padding-left: 1rem;
+            gap: 1rem;
+
+            input{
+                background-color: var(--bc-search);
+                border: none;
+                width: 70%;
+            }
         }
     }
 
@@ -151,12 +156,20 @@ header {
 
         .search-big {
             background-color: var(--bc-search);
-            border-radius: 2rem;
-            border: 1px solid #949494;
-            width: 430px;
-            height: 70%;
+            border-width: 0;
             margin: 0.5rem;
+            border-radius: 3rem;
+            width: 460px;
+            color: #949494;
+            height: 70%;
             padding-left: 1rem;
+            gap: 1rem;
+
+            input{
+                background-color: var(--bc-search);
+                border: none;
+                width: 70%;
+            }
         }
     }
 }
