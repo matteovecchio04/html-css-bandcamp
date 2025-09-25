@@ -141,7 +141,7 @@ header {
             padding-left: 1rem;
             gap: 1rem;
 
-            input{
+            input {
                 background-color: var(--bc-search);
                 border: none;
                 width: 70%;
@@ -152,7 +152,7 @@ header {
     .header-bottom {
         height: 55px;
         background-color: var(--bc-secondary);
-        padding-left: 66px;
+        padding-left: 45px;
 
         .search-big {
             background-color: var(--bc-search);
@@ -165,7 +165,7 @@ header {
             padding-left: 1rem;
             gap: 1rem;
 
-            input{
+            input {
                 background-color: var(--bc-search);
                 border: none;
                 width: 70%;
@@ -180,6 +180,7 @@ header {
     width: 90%;
     margin: auto;
     display: flex;
+    padding-top: 1rem;
     gap: 1rem;
 
     .main-left {
@@ -189,13 +190,13 @@ header {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
-        padding-top: 1rem;
+        padding-right: 1.5rem;
         scrollbar-width: thin;
         scrollbar-color: var(--bc-search) var(--bc-primary);
 
+
         .card {
             width: calc(100% / 4 - 1rem);
-            padding: 0.5rem;
 
             .card-top {
                 width: 100%;
@@ -222,13 +223,13 @@ header {
         width: 35%;
         height: 100%;
         text-align: center;
-        padding-top: 1rem;
+        padding-left: 1.5rem;
         scrollbar-width: thin;
         scrollbar-color: var(--bc-search) var(--bc-primary);
+        border-left: 1px solid var(--bc-search);
 
         .card-big {
             width: 100%;
-            padding: 0.5rem;
 
             .card-top {
                 width: 100%;
@@ -283,10 +284,43 @@ header {
                 margin-bottom: 1rem;
             }
 
-            .audio{
+            .audio {
+                width: 100%;
                 margin-top: 2rem;
                 margin-bottom: 2rem;
             }
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .header-top .search{
+        width: 250px;
+
+        input{
+            width: 75%;
+        }
+    }
+
+    header .header-bottom{
+        padding-left: 30px;
+    }
+
+    header .header-bottom .search-big{
+        width: 375px;
+    }
+
+    .bottom .main-left .card {
+        width: calc(100% / 2 - 1rem);
+    }
+
+    .bottom .aside-right .card-big .card-bottom .play {
+        width: 30%;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .bottom .aside-right .card-big .audio {
+        width: 100%
     }
 }
