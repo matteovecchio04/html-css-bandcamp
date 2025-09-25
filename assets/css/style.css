@@ -282,6 +282,11 @@ header {
                 border: 1px solid white;
                 margin-bottom: 1rem;
             }
+
+            .audio{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
         }
     }
 }
